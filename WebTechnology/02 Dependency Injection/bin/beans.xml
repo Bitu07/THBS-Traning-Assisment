@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <!-- bean definitions here -->
+
+	<bean id="bike" class="com.DI.Bike">
+	
+		<!--  Bike obj = new Bike()  
+			  obj.setcolor("red")        -->
+		<property name="color" value="red"></property>
+	</bean>
+	
+	
+	<bean id="car" class="com.DI.Car">
+	
+		<!-- Car obj = new Car("Blue") -->
+		<constructor-arg name="color" value="Blue"></constructor-arg>
+	</bean>
+	
+	
+	<bean id="aeroplane" class="com.DI.Aeroplane">
+		<constructor-arg name="engine">
+			<bean class="com.DI.Engine"></bean>
+		</constructor-arg>
+	</bean>
+	
+	
+	<bean id="engine" class="com.DI.Engine"></bean>
+	
+	<bean id="aeroplane1" class="com.DI.Aeroplane1">
+		<constructor-arg name="engine" ref="engine"></constructor-arg>
+	</bean>
+
+</beans>
