@@ -1,0 +1,18 @@
+Abhishek Yadav     
+Emp id: 6169
+
+
+1	304
+2	Accept
+3	Create
+4	both manual and automation api testing 
+5	Project
+6	Project > Test Suite > Test Case > Test Step
+
+7	excel sheet
+
+8	Response assertion
+9	404
+10	Load test
+11	Regular expression extractor
+12  Non functional testing
